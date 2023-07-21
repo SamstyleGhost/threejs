@@ -1,0 +1,17 @@
+Using vite => npm create vite@latest -- --template react client
+Packages needed:
+    three : JS library for 3D animations
+    @react-three/fiber : react renderer for three.js
+    @react-three/drei : contains useful items for react-three fiber
+    maath : for math to be used with three.js
+    valtio : used to easily manage react state
+    react-color : color picker for react
+    framer-motion : used for animations
+    tailwindcss : for the CSS
+    postcss : turns tailwindcss syntax to vanilla CSS
+    autoprefixer : plugin that uses postcss 
+
+Follow the steps on the tailwindcss website
+Removed the eslint:recommended from .eslintrc.cjs for the unused vars error issue
+Downloaded and used the assets, config and public folders from the JS Mastery video
+Using the index.css file from JS Mastery video
