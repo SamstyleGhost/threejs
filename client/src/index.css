@@ -20,7 +20,11 @@ html {
 }
 
 .home {
-  @apply w-fit xl:h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-36 sm:p-8 p-6 max-xl:gap-7 absolute z-10 bg-[#efbd48];
+  @apply w-1/2 h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-36 sm:p-8 p-6 max-xl:gap-7 z-10 relative bg-[#efbd48];
+}
+
+.home-alternate {
+  @apply w-1/2 h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-36 sm:p-8 p-6 max-xl:gap-7 z-10 relative bg-black;
 }
 
 .home-content {
@@ -29,6 +33,10 @@ html {
 
 .head-text {
   @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+}
+
+.head-text-alternate {
+  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-[#efbd48];
 }
 
 .download-btn {

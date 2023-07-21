@@ -14,6 +14,7 @@ const Home = () => {
   return (
     <AnimatePresence>
       {snap.intro && ( // Checking to see whether we are on the homepage in order to display homepage data
+      <div className='flex flex-row justify-between h-full bg-black'>
         <motion.section className='home' {...slideAnimation('left')}> {/* its gonna slide from the left */} 
           <motion.header {...slideAnimation('down')}> {/* its gonna slide from the top, in combination with the above motion.section animation, it will slide in from the top left */}
             <img
@@ -43,6 +44,16 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </motion.section>
+        <motion.section className='home-alternate' {...slideAnimation('right')}>
+          <motion.div className='home-content' {...headContainerAnimation}>
+            <motion.div {...headTextAnimation}>
+              <h1 className='head-text-alternate'>
+                DEFINE <br className='xl:block hidden'/> {/* Break tag only on large devices */} YOUR OWN STYLE.
+              </h1>              
+            </motion.div>
+          </motion.div>
+        </motion.section>
+      </div>
       )}
     </AnimatePresence>
   )
