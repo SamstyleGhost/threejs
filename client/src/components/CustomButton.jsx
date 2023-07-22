@@ -1,6 +1,7 @@
 import React from 'react';
 import state from '../store';
 import { useSnapshot } from 'valtio';
+import { getContrastingColor } from '../config/helpers';
 
 const CustomButton = ({ type, title, customStyles , handleClick }) => {
 
@@ -8,10 +9,10 @@ const CustomButton = ({ type, title, customStyles , handleClick }) => {
 
     const snap = useSnapshot(state);
 
-    if(type === 'filled'){
+    if(type === 'decal'){
       return {
-        backgroundColor: '#000000',
-        color: '#ffffff'
+        backgroundColor: state.color,
+        color: getContrastingColor(state.color)
       }
     }
       
@@ -20,6 +21,7 @@ const CustomButton = ({ type, title, customStyles , handleClick }) => {
   return (
     <button
       className={`px-2 py-1.5 flex-1 rounded-md ${customStyles}`} // Use flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size, 
+      style={generateStyle(type)}
       onClick={handleClick}
       //* Additional info about flex-... :
       //* Use flex-initial to allow a flex item to shrink but not grow, taking into account its initial size
