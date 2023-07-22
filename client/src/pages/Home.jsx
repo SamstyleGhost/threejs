@@ -20,7 +20,7 @@ const Home = () => {
             <img
             src='./threejslogo.svg'
             alt='logo'
-            className='w-8 h-8 object-contain'
+            className='w-16 h-16 object-contain'
             />
           </motion.header>
 
@@ -31,7 +31,7 @@ const Home = () => {
               </h1>
             </motion.div>
             <motion.div {...headContentAnimation} className='flex flex-col gap-8'>
-              <p className='max-w-md font-normal text-gray-700 text-base drop-shadow-md'> {/* text-base is used for line-height */}
+              <p className='max-w-md font-medium text-gray-700 text-base drop-shadow-md'> {/* text-base is used for line-height */}
                 Create your unique and exclusive shirt with our brand-new 3D customization tool.
                 <strong> Unleash Your Imagination</strong> and define your own style.
               </p>

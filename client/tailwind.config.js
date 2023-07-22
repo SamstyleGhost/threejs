@@ -21,6 +21,9 @@ module.exports = {
             transform: 'translateY(0)',
           }         
         }
+      },
+      fontFamily: {
+        'lumanismo': ['Lumanosimo', 'cursive'], // havent used this anywhere yet
       } 
     },
   },
