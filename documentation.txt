@@ -17,3 +17,12 @@ Downloaded and used the assets, config and public folders from the JS Mastery vi
 Using the index.css file from JS Mastery video
 
 The use of <Environment /> in Cutomizer breaks the site. It is the issue of react-three/drei and would solve later if needed 
+
+For the backend:
+    cloudinary: Used to save images
+    cors: to allow for cross-origin requests
+    dotenv: to store environment variables
+    express
+    mongoose
+    nodemon
+    openai
