@@ -15,3 +15,5 @@ Follow the steps on the tailwindcss website
 Removed the eslint:recommended from .eslintrc.cjs for the unused vars error issue
 Downloaded and used the assets, config and public folders from the JS Mastery video
 Using the index.css file from JS Mastery video
+
+The use of <Environment /> in Cutomizer breaks the site. It is the issue of react-three/drei and would solve later if needed 
